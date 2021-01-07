@@ -57,8 +57,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background-image: url("/static/img/background.jpeg");
-    background-color: #faf8f5;
+    background-image: url("../img/bg.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,7 +71,7 @@ body .sitebar {
     height: 100vh;
     width: 23vw;
     padding: 10px 10px 10px 10px;
-    background-color: rgba(22,63,184,0.92549);
+    background-image: linear-gradient(to right, rgba(50, 166, 168,50), rgba(107, 168, 50,99));
     color: #fff;
     max-width: 300px
 }
@@ -244,3 +243,4 @@ body .content-wrapper {
         min-width: 100vw
     }
 }
+
