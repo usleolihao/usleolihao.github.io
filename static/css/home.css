@@ -1,0 +1,106 @@
+.content-wrapper {
+    background: none !important;
+    height: 80vh !important;
+    overflow: hidden !important
+}
+
+.home {
+    padding: 90px 0 0 5vw
+}
+
+.home .home-summary {
+    width: fit-content;
+    padding-top: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25)
+}
+
+.home h2 {
+    font-size: 20px;
+    padding-bottom: 5px
+}
+
+.home nav {
+    margin: 110px 0
+}
+
+.home nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.home nav ul li {
+    margin-bottom: 25px
+}
+
+.home nav a {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #1743c7d0;
+    color: white;
+    border-radius: 2px;
+    font-size: 21px;
+    letter-spacing: 0.1em;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5)
+}
+
+.home nav a:hover {
+    background-color: rgba(22,63,184,0.92549)
+}
+
+@media (max-width: 1000px) {
+    .home nav a {
+        font-size:16px
+    }
+}
+
+@media (max-width: 1000px) {
+    .home nav {
+        margin:100px 0
+    }
+}
+
+@media (max-width: 450px) {
+    .home nav {
+        margin:50px 0
+    }
+}
+
+.home p {
+    font-size: 18px;
+    color: white;
+    background: #1a4ce4c7;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 4px
+}
+
+@media (max-width: 1000px) {
+    .home {
+        padding:15px 0 0 1vw
+    }
+
+    .home h1 {
+        font-size: 30px
+    }
+
+    .home p {
+        font-size: 16px
+    }
+}
+
+@media (max-width: 450px) {
+    .home {
+        padding:0 0 0 1vw
+    }
+
+    .home .home-summary {
+        padding-top: 5px
+    }
+}
+
+@media (max-width: 323px) {
+    .home .student {
+        color:white !important
+    }
+}
