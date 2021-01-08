@@ -1,4 +1,3 @@
-<!-- docs/_sidebar.md -->
-
+<!-- projs/_sidebar.md -->
 * [Home](/)
 * [Guide](guide.md)

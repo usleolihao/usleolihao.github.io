@@ -1,4 +1,4 @@
-<!-- docs/_sidebar.md -->
+<!-- notes/_sidebar.md -->
 
 * [Home](/)
 * [Guide](guide.md)
