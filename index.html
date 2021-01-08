@@ -49,7 +49,7 @@
                     <div class="navigation-sidebar" id="navigation-sidebar">
                         <ul>
                             <li >
-                                <a href="home.html" class="btn-nav-active" target="mainiframe">
+                                <a href="home.html" class="btn-nav btn-nav-active" target="mainiframe">
                                     Home
                                 </a>
                             </li>
@@ -107,13 +107,7 @@
 
     <main>
         <div class="content-wrapper">
-            <section>
-                <h2></h2>
-                <p><b></b></p>
-            </section>
-
             <iframe name="mainiframe" src="home.html" id="mainiframe" scrolling="no" onload="resizeFrameHeight()" frameborder="0" width="100%"></iframe>
-
         </div>
     </main>
 
@@ -148,8 +142,8 @@
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function() {
           var current = document.getElementsByClassName("btn-nav-active");
-          current[0].className = current[0].className.replace("btn-nav-active", "btn-nav");
-          this.className = "btn-nav-active";
+          current[0].className = current[0].className.replace(" btn-nav-active", "");
+          this.className += " btn-nav-active";
       });
     }
     </script>
