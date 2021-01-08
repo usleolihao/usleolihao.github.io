@@ -68,7 +68,7 @@ body .sitebar {
     position: fixed;
     display: block;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 23vw;
     padding: 10px 10px 10px 10px;
     background-image: linear-gradient(to right, rgba(50, 166, 168,50), rgba(107, 168, 50,99));
@@ -81,7 +81,7 @@ body .sitebar .sitebar-inner {
 }
 
 body .sitebar .sitebar-inner>div,body .sitebar .sitebar-inner nav {
-    margin-bottom: 80px
+    margin-bottom: auto;
 }
 
 body .sitebar .sitebar-inner ul,body .sitebar .sitebar-inner .social-block {

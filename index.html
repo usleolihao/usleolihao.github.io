@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,24 +16,22 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="static/css/main.css" />
-    
     <link rel="stylesheet" href="static/css/home.css" />
 
-    <link rel="icon" type="image/png" href="/static/img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="/static/img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/static/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="static/img/favicon-96x96.png" sizes="96x96" >
 
-    
     <title>Lihao's Homepage</title>
     
 </head>
 
 <body>
+
+    <!-- Navigation -->
     <aside>
         <div class="sitebar">
             <div class="sitebar-inner" id="sitebar-inner">
                 <div class="block">
-                    <a class="person" href="https://github.com/usleolihao">
+                    <a class="person" href="https://usleolihao.github.io/">
                         <div class="person-photo">
                             <img src="static/img/avatar.jpeg" alt="avatar" />
                         </div>
@@ -42,38 +40,51 @@
                             <h1>Lihao Guo</h1>
                             <h2>An ordinary programming ape</h2>
                         </div>
-                        
                     </a>
                 </div>
+                
+                <hr>
+
                 <nav class="block navigation-block">
                     <div class="navigation-sidebar" id="navigation-sidebar">
                         <ul>
+                            <li >
+                                <a href="home.html" class="btn-nav-active" target="mainiframe">
+                                    Home
+                                </a>
+                            </li>
+
                             <li>
-                                <a href="project/" class="btn-nav ">
+                                <a href="project.html" class="btn-nav" target="mainiframe">
                                     PROJECT
                                 </a>
                             </li>
                             <li>
-                                <a href="experience/" class="btn-nav ">
+                                <a href="experience.html" class="btn-nav" target="mainiframe">
                                     EXPERIENCE
                                 </a>
                             </li>
                             <li>
-                                <a href="education/" class="btn-nav ">
+                                <a href="education.html" class="btn-nav" target="mainiframe">
                                     EDUCATION
                                 </a>
                             </li>
                             <li>
-                                <a href="contact/" class="btn-nav ">
+                                <a href="contact.html" class="btn-nav" target="mainiframe">
                                     CONTACT ME
                                 </a>
                             </li>
                             <li>
-                                <a href="/" target="_blank" class="btn-nav">RESUME</a>
+                                <a href="cv.html" class="btn-nav" target="mainiframe">
+                                    CV
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </nav>
+
+                <hr>
+
                 <div class="block social-block">
                     <div class="social-block-title">
                         GET IN TOUCH
@@ -92,7 +103,7 @@
                 </div>
             </div>
         </div>
-
+    </aside>
 
     <main>
         <div class="content-wrapper">
@@ -100,28 +111,11 @@
                 <h2></h2>
                 <p><b></b></p>
             </section>
-            
-            <div class="home">
-                <h1>Hi, I'm Lihao</h1>
-                <div class="home-summary">
-                    <h2>I am a student at the University of Arizona.</h2>
-                </div>
 
-                <nav>
-                    <ul class="home-quick-links">
-                        <li><a href="project/" >x</a></li>
-                        <li><a href="experience/" >x</a></li>
-                    </ul>
-                </nav>
-
-                <p>x🚀🚀</p>
-
-            </div>
+            <iframe name="mainiframe" src="home.html" id="mainiframe" scrolling="no" onload="resizeFrameHeight()" frameborder="0" width="100%"></iframe>
 
         </div>
     </main>
-    
-    <script src="static/js/sidebar.js"></script>
 
     <!-- JavaScript for Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -133,6 +127,35 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        function resizeFrameHeight(){
+            var ifm = document.getElementById("mainiframe");
+            ifm.height = document.documentElement.clientHeight - 50;
+        }
+
+        window.onresize=function(){
+            resizeFrameHeight();
+        }
+    </script>
+
+
+    <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("navigation-sidebar");
+    var btns = header.getElementsByClassName("btn-nav");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("btn-nav-active");
+          current[0].className = current[0].className.replace("btn-nav-active", "btn-nav");
+          this.className = "btn-nav-active";
+      });
+    }
+    </script>
+
+
+
 </body>
 
 </html>

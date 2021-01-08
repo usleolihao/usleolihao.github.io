@@ -37,8 +37,6 @@
 .home nav a {
     text-decoration: none;
     padding: 8px 12px;
-
-    color: white;
     border-radius: 2px;
     font-size: 21px;
     letter-spacing: 0.1em;
@@ -70,8 +68,7 @@
 .home p {
     font-size: 18px;
     color: white;
-    width: fit-content;
-    padding: 5px 350px;
+    width: auto;
     border-radius: 4px
 }
 
