@@ -1,6 +1,6 @@
 .content-wrapper {
     background: none !important;
-    height: 80vh !important;
+    height: 100% !important;
     overflow: hidden !important
 }
 
@@ -11,8 +11,8 @@
 
 .home .home-summary {
     width: fit-content;
-    padding-top: 30px;
-    padding-left: 100px;
+    padding-top: 5px;
+    padding-left:45px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.25)
 }
 
@@ -28,23 +28,31 @@
 .home nav ul {
     list-style: none;
     margin: 0;
-    padding: 0px 255px
+    padding: 0px 165px
+}
+
+.home ul li{
+    margin-left: 65px;
+    padding-left: 15px
 }
 
 .home nav ul li {
-    margin-bottom: 25px
+    margin-bottom: 15px;
 }
 
-.home nav a {
+.home-quick-links li {
     text-decoration: none;
     padding: 8px 12px;
+    width: auto;
     border-radius: 2px;
-    font-size: 21px;
-    color: pink;
+    font-size: 13px;
+    color: rgba(255, 255, 255,0.99);
     letter-spacing: 0.1em;
-    background-color: rgba(155, 86, 156, 0.3);
+    background-color: rgba(231, 245, 215, 0.2);
     box-shadow: 1px 1px 2px rgba(0,0,0,0.5)
 }
+
+
 
 .home nav a:hover {
     background-color: rgba(22,63,184,0.92549)
@@ -52,7 +60,8 @@
 
 @media (max-width: 1000px) {
     .home nav a {
-        font-size:16px
+        font-size:16px;
+        color: rgba(190, 229, 235,0.8)
     }
 }
 
@@ -72,6 +81,7 @@
     font-size: 18px;
     color: white;
     width: auto;
+    height: auto;
     padding-left: 100px;
     border-radius: 4px
 }

@@ -49,7 +49,7 @@
                     <div class="navigation-sidebar" id="navigation-sidebar">
                         <ul>
                             <li >
-                                <a href="about.html" class="btn-nav" target="mainiframe">
+                                <a href="about.html" class="btn-nav btn-nav-active" target="mainiframe">
                                     About
                                 </a>
                             </li>
@@ -107,7 +107,7 @@
 
     <main>
         <div class="content-wrapper">
-            <iframe name="mainiframe" src="home.html" id="mainiframe" scrolling="no" onload="resizeFrameHeight()" frameborder="0" width="100%"></iframe>
+            <iframe name="mainiframe" src="home.html" id="mainiframe" scrolling="yes" onload="resizeFrameHeight()" frameborder="0" width="100%"></iframe>
         </div>
     </main>
 
@@ -126,7 +126,7 @@
 
         function resizeFrameHeight(){
             var ifm = document.getElementById("mainiframe");
-            ifm.height = document.documentElement.clientHeight - 0;
+            ifm.height = document.documentElement.clientHeight + 0;
         }
 
         window.onresize=function(){
@@ -138,13 +138,17 @@
     <script>
     // Add active class to the current button (highlight it)
     var header = document.getElementById("navigation-sidebar");
+
+    // Get all buttons with class="btn" inside the container
     var btns = header.getElementsByClassName("btn-nav");
+
+    // Loop through the buttons and add the active class to the current/clicked button
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("btn-nav");
-          current[0].className = current[0].className.replace("btn-nav-active", "btn-nav");
-          this.className = "btn-nav-active";
-      });
+        var current = document.getElementsByClassName("btn-nav-active");
+        current[0].className = "btn-nav";
+        this.className += " btn-nav-active";
+    });
   }
 </script>
 
