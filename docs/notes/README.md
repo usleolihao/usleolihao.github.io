@@ -3,7 +3,7 @@
 This page will contain the notes I took while studying.
 
 ## docsify
-
+## [![logo](https://docsify.js.org/_media/icon.svg)](https://docsify.js.org) <!-- {docsify-ignore} -->
 A magical documentation site generator.
 
 #### What it is
