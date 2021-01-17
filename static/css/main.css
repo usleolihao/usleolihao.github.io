@@ -107,7 +107,7 @@ body .sitebar .person {
 
 body .sitebar .person img {
     width: 152px;
-    height: 152px;
+    height: auto;
     border-radius: 50%
 }
 

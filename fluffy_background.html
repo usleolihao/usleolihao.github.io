@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 50%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <script>
+    var frame1 = "<div class=\"responsive\"><div class=\"gallery\"><a target=\"_blank\" href=\"";
+    var frame2 = "\"><img src=\"";
+    var frame3 = "\" alt=\"Cinque Terre\" width=\"600\" height=\"400\"></a></div></div>";
+
+    var arr=['Givenchy'];
+    var arr2 = [12];
+    var i,j;
+    for (i = 0; i < arr.length; i++) {
+      for (j = 0; j < arr2[i]; j++){
+        var filename = "static/bgs/" + arr[i] + (j + 1) + ".png";
+        document.write(frame1 + filename + frame2 + filename + frame3);
+      }
+    }
+  </script>
+  <div class="clearfix"></div>
+</body>
+</html>
