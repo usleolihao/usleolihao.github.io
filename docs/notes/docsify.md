@@ -369,7 +369,7 @@ window.$docsify = {
 
 
 ### Table
-'''markdown
+
 <table>
     <thead>
         <tr>
@@ -396,4 +396,3 @@ window.$docsify = {
         </tr>
     </tbody>
 </table>
-```

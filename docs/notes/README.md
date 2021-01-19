@@ -16,4 +16,7 @@ docsify generates documentation website on the fly. Unlike GitBook, it does not 
 
 
 ## Algorithm Notes
+
+
 [👉Algorithm notes👈](notes/Algorithm.md)
+- Detecting Intersections between Segments

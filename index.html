@@ -112,7 +112,7 @@
 
     <main>
         <div class="content-wrapper">
-            <iframe name="mainiframe" src="about.html" id="mainiframe" scrolling="yes" onload="resizeFrameHeight()" frameborder="0" width= "100%" height="auto"></iframe>
+            <iframe name="mainiframe" src="about.html" id="mainiframe" scrolling="yes" onload="resizeFrameHeight()" frameborder="0" width= "100%" height="100%"></iframe>
         </div>
     </main>
 
@@ -131,7 +131,7 @@
 
         function resizeFrameHeight(){
             var ifm = document.getElementById("mainiframe");
-            ifm.height = document.documentElement.clientHeight + 0;
+            ifm.height = document.documentElement.clientHeight + 1;
         }
 
         window.onresize=function(){
