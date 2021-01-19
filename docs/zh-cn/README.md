@@ -8,6 +8,7 @@
     - 电子邮件: leolihao@email.arizona.edu
     - 微信: Biancheng_leo
 
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=usleolihao&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=usleolihao&layout=compact&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=usleolihao&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)<!-- {docsify-ignore} -->
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=usleolihao&layout=compact&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)<!-- {docsify-ignore} -->
