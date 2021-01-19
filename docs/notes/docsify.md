@@ -252,3 +252,85 @@ above navbar is an example that use the emoji plugin
 ```
 
 ## Cover page
+
+
+## Plugins
+
+### [docsify-katex](https://github.com/upupming/docsify-katex)
+
+A docsify plugin for rendering LaTex math equations [@upupming](https://github.com/upupming).
+
+#### Usage
+
+Add docsify-katex CDN to your index.html:
+```html
+<!-- CDN files for docsify-katex -->
+<script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+<!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+```
+
+[Supported functions](https://upupming.site/docsify-katex/docs/#/supported)
+
+### [docsify-count](https://github.com/827652549/docsify-count)
+
+This is a plugin to add word count for markdown files of docsify.
+#### Usage 
+```html
+<script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
+
+or
+
+<script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+```
+Setting
+```html
+window.$docsify = {
+  count:{
+    countable: true,
+    position: 'top',
+    margin: '10px',
+    float: 'right',
+    fontsize:'0.9em',
+    color:'rgb(90,90,90)',
+    language:'chinese',
+    localization: {
+      words: "",
+      minute: ""
+    },
+    isExpected: true
+  }
+}
+```
+
+## Extra
+
+### Table
+'''markdown
+<table>
+    <thead>
+        <tr>
+            <th>Layer 1</th>
+            <th>Layer 2</th>
+            <th>Layer 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=4>L1 Name</td>
+            <td rowspan=2>L2 Name A</td>
+            <td>L3 Name A</td>
+        </tr>
+        <tr>
+            <td>L3 Name B</td>
+        </tr>
+        <tr>
+            <td rowspan=2>L2 Name B</td>
+            <td>L3 Name C</td>
+        </tr>
+        <tr>
+            <td>L3 Name D</td>
+        </tr>
+    </tbody>
+</table>
+```
