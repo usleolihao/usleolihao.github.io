@@ -303,7 +303,70 @@ window.$docsify = {
 }
 ```
 
+### Write a plugin
+
+A plugin is simply a function that takes `hook` as an argument. The hook supports handling of asynchronous tasks. 
+[👉official document👈](https://github.com/docsifyjs/docsify/blob/314e2d9d39a024270403a42eb19bd98e6cce8d17/docs/write-a-plugin.md)
+
+```html
+window.$docsify = {
+  plugins: [
+    function(hook, vm) {
+      hook.init(function() {
+        // Called when the script starts running, only trigger once, no arguments,
+      });
+
+      hook.beforeEach(function(content) {
+        // Invoked each time before parsing the Markdown file.
+        // ...
+        return content;
+      });
+
+      hook.afterEach(function(html, next) {
+        // Invoked each time after the Markdown file is parsed.
+        // beforeEach and afterEach support asynchronous。
+        // ...
+        // call `next(html)` when task is done.
+        next(html);
+      });
+
+      hook.doneEach(function() {
+        // Invoked each time after the data is fully loaded, no arguments,
+        // ...
+      });
+
+      hook.mounted(function() {
+        // Called after initial completion. Only trigger once, no arguments.
+      });
+
+      hook.ready(function() {
+        // Called after initial completion, no arguments.
+      });
+    }
+  ]
+};
+```
+!> You can get internal methods through window.Docsify. Get the current instance through the second argument.
+
 ## Extra
+
+### docsify-updated
+```html
+window.$docsify = {
+  plugins: [
+    function(hook, vm) {
+      hook.beforeEach(function(html) {
+        return (
+          html +
+          '\n----\n' +
+          'Last modified {docsify-updated} ' 
+        );
+      });
+    }
+  ]
+};
+```
+
 
 ### Table
 '''markdown
