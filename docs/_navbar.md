@@ -5,6 +5,8 @@
 
 * Quick Link
 
-    * [Codes](codes/README.md)
-    * [Notes](notes/README.md)
-    * [Projects](projs/README.md)
+    * [Codes](codes/)
+    * [Notes](notes/)
+    * [Projects](projs/)
+    * [代码](zh-cn/codes/)
+    * [笔记](zh-cn/notes/)
