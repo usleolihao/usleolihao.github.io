@@ -348,11 +348,17 @@ window.$docsify = {
 ```
 !> You can get internal methods through window.Docsify. Get the current instance through the second argument.
 
-## Extra
+## Customization
 
-### docsify-updated
+### formatUpdated and docsify-updated
+
+- type: String|Function
+- We can display the file update date through `{docsify-updated}` variable. And format it by `formatUpdated`.
+- https://github.com/lukeed/tinydate#patterns
+
 ```html
 window.$docsify = {
+  formatUpdated: '{MM}/{DD} {HH}:{mm}',
   plugins: [
     function(hook, vm) {
       hook.beforeEach(function(html) {
@@ -396,3 +402,4 @@ window.$docsify = {
         </tr>
     </tbody>
 </table>
+
