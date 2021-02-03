@@ -5,4 +5,5 @@
 * [Notes](notes/)
 * [Projects](projs/)
 * [3D Print](3dprint/)
-* [:cn:中文](/zh-cn/)
+* [Fluffy Friends](fluffy/)
+* [:cn:中文](zh-cn/)
