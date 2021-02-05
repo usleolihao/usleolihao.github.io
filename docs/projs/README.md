@@ -6,7 +6,7 @@ This page will contain the projects I'm planning/working on/done.
 
 ## Games
 
-### Mix Watermelon
+### [Mix Watermelon](projs/Games?id=mix-watermelon)
 
 Tap it to make the same fruit collision synthesized quickly to combine the watermelon, come to challenge it!
 
