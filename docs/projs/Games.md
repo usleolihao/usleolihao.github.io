@@ -8,11 +8,14 @@ The origin code comes from [NingZhengsheng](https://github.com/NingZhengsheng/Co
 
 ![watermelon](https://raw.githubusercontent.com/bullhe4d/bigwatermelon/main/1611557925872957.gif)
 
-v1.1
+### Log
+
+```text
+V 1.1  2/6/2020
 Move the score to the upright corner.
 Move the replay button next to the back button.
 Resize the back button and replay button.
 The game ends after touch the death line for 5 seconds.
-
+```
 
 
