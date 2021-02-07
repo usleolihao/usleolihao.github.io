@@ -1,1 +1,0 @@
-window._CCSettings={platform:"web-mobile",groupList:["default","floot","watermelon","death"],collisionMatrix:[[false,false,false],[false,false,true],[false,true,true,true],[false,false,true,false]],hasResourcesBundle:false,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/scenes/main_scene.fire",orientation:"",jsList:["assets/script/window.js"]};
