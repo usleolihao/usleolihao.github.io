@@ -1,6 +1,6 @@
 # Games
 
-## Mix Watermelon v1.12
+## Mix Watermelon v1.13
 
 <a href="../watermelon" >👉Play here👈</a>
 
@@ -13,6 +13,7 @@ The origin code comes from [NingZhengsheng](https://github.com/NingZhengsheng/Co
 ```text
 v 1.13
 Changed windows size.
+Fixed bugs.
 
 v 1.12
 The game ends after touch the death line for 3 seconds. 
