@@ -11,8 +11,7 @@ The origin code comes from [NingZhengsheng](https://github.com/NingZhengsheng/Co
 ### Log
 
 ```text
-v 1.14 2/8/2020
-Able to drag the fruit to specific position.
+v 1.13 2/8/2020
 Changed windows size.
 Fixed bugs.
 
