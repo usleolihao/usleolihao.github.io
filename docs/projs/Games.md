@@ -1,6 +1,6 @@
 # Games
 
-## Mix Watermelon v1.13
+## Mix Watermelon v1.4
 
 <a href="../watermelon" >👉Play here👈</a>
 
@@ -11,11 +11,12 @@ The origin code comes from [NingZhengsheng](https://github.com/NingZhengsheng/Co
 ### Log
 
 ```text
-v 1.13
+v 1.14 2/8/2020
+Able to drag the fruit to specific position.
 Changed windows size.
 Fixed bugs.
 
-v 1.12
+v 1.12 2/6/2020
 The game ends after touch the death line for 3 seconds. 
 Lucy watermelon will appear when you refresh the fruit.
 You will lose 1 point to refresh the fruit.
@@ -25,7 +26,7 @@ Changed the replay button to replace the fruit.
 Set a frame for the next fruit.
 Fixed bugs.
 
-V 1.1  2/6/2020
+V 1.1  
 Move the score to the upright corner.
 Move the replay button next to the back button.
 Resize the back button and replay button.
