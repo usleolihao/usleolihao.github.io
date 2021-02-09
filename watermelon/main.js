@@ -142,3 +142,21 @@ if (window.jsb) {
     cc.macro.CLEANUP_IMAGE_CACHE = true;
     window.boot();
 }
+// Begin Cocos Analytics
+(function () {
+  if ((typeof cocosAnalytics) !== 'undefined'){
+    var initArgs = {
+      appID: '628257554',
+      storeID: 'H5',
+      engine: 'cocos',
+      callNumber: ''
+    };
+    if (!initArgs.appID || !initArgs.storeID) {
+      console.error('请在编辑器设置好 Cocos Analytics 的 appID，如果在Android或者iOS下发布，请选择好对应的渠道');
+      return;
+    }
+    cocosAnalytics.init(initArgs);
+  }
+})();
+// End Cocos Analytics
+    
