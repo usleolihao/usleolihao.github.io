@@ -10,8 +10,9 @@ The origin code comes from [NingZhengsheng](https://github.com/NingZhengsheng/Co
 
 ### Log
 
-```text
-v 1.13 2/8/2020
+```text 
+v 1.14 2/8/2020
+Can Drag the fruit.
 Changed windows size.
 Fixed bugs.
 
